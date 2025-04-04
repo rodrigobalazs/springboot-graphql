@@ -8,9 +8,10 @@ Products management.
 
 ```
 Java 17
-Spring Boot 3 ( GraphQL API )
+Spring Boot 3
+Spring Boot GraphQL / GraphQL API
 Spring Data ( MySQL )
-Misc Libraries (  Maven  /  Docker /  Lombok  )
+Misc Libraries (  Maven  /  Docker /  Lombok /  Apache Commons  )
 ```
 
 ### ⚒️ Getting Started
