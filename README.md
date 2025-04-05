@@ -9,7 +9,7 @@ Products management.
 ```
 Java 17
 Spring Boot 3
-Spring Boot GraphQL / GraphQL API
+Spring for GraphQL ( GraphQL API )
 Spring Data ( MySQL )
 Misc Libraries (  Maven  /  Docker /  Lombok /  Apache Commons  )
 ```

@@ -28,7 +28,7 @@ public class Product {
     /**
      * Creates a new Product.
      */
-    public Product(final Long id, final String theName, final Double thePrice) {
+    public Product(final String theName, final Double thePrice) {
         Validate.notEmpty(theName, "The product name cannot be null nor empty");
         name = theName;
         price = thePrice;
