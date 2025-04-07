@@ -35,3 +35,40 @@ spring.datasource.password=<pass>
 mvn clean install;
 mvn spring-boot:run;
 ```
+
+### 💡 GraphQL API Examples
+
+#### 1. Get all the available Products =>
+```
+curl -X POST http://localhost:8080/graphql  \
+     -H 'accept: application/json'  \
+     -H 'Content-Type: application/json' -d \
+'{
+    "query": "{ allProducts { id name price } }"
+}';
+```
+
+#### 2. Get all the available Products ( via HTTPie ) =>
+```
+http POST http://localhost:8080/graphql query="{ allProducts { id name price } }";
+```
+
+#### 3. Retrieves a Product by Product Name (e.g 'Rustic Sofa') and only fetch in particular the product´s price =>
+```
+curl -X POST http://localhost:8080/graphql  \
+     -H 'accept: application/json'  \
+     -H 'Content-Type: application/json' -d \
+'{
+    "query": "{ productByName(name:\"Rustic Sofa\") { price } }"
+}';
+```
+
+#### 4. Creates a new 'Triathlon Suit' Product =>
+```
+curl -X POST http://localhost:8080/graphql  \
+     -H 'accept: application/json'  \
+     -H 'Content-Type: application/json' -d \
+'{
+    "query":"mutation { addProduct(name:\"Triathlon Suit\", price:250.1) { id name price } }"
+}';
+```
