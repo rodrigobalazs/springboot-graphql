@@ -1,8 +1,8 @@
 # springboot-graphql
 
 ## Spring Boot GraphQL API
-This repository contains an Spring Boot 'Store Application' which expose a GraphQL API with some endpoints related to
-Products management.
+This repository contains an Spring Boot 'Store Application' which expose a GraphQL API with Queries and Mutations
+used to manage operations related to the Store´s Products.
 
 ### 🔧 Technology Stack
 
